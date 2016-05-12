@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var inputText: UILabel!
     @IBOutlet weak var resultText: UILabel!
@@ -34,7 +33,7 @@ class ViewController: UIViewController {
                    self.numToAdd += uwTitle
                 }
                 if let num = Double(numToAdd) { calc.input = num }
-            } else { print(String(sender.currentTitle!)) }
+            } else { print("Could not set number") }
         }
         refreshUI()
     }
@@ -64,9 +63,9 @@ class ViewController: UIViewController {
             calc.result = calc.input
             break
         }
-        operationText.text = "="
         numToAdd = ""
         refreshUI()
+        operationText.text = "="
     }
     
     @IBAction func divideButton(sender: AnyObject) {
@@ -123,6 +122,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearButton(sender: AnyObject) {
+        operation = ""
         calc.input = 0
         calc.result = 0
         numToAdd = ""
@@ -133,6 +133,7 @@ class ViewController: UIViewController {
         let formatter = NSNumberFormatter()
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 2
+        
         switch operation {
         case "divide":
             operationText.text = "/"
@@ -159,9 +160,10 @@ class ViewController: UIViewController {
             break
             
         default:
-            operationText.text = "="
+            operationText.text = ""
             break
         }
+        
         inputText.text = formatter.stringFromNumber(calc.input)
         resultText.text = formatter.stringFromNumber(calc.result)
     }
