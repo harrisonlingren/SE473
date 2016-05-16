@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB4614191CE9FECC00E75EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614181CE9FECC00E75EC6 /* AppDelegate.swift */; };
+		EB46141B1CE9FECC00E75EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46141A1CE9FECC00E75EC6 /* ViewController.swift */; };
+		EB46141E1CE9FECC00E75EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB46141C1CE9FECC00E75EC6 /* Main.storyboard */; };
+		EB4614201CE9FECC00E75EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */; };
+		EB4614231CE9FECC00E75EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4614211CE9FECC00E75EC6 /* LaunchScreen.storyboard */; };
+		EB46142B1CEA01C700E75EC6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46142A1CEA01C700E75EC6 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB46142D1CEA065400E75EC6 /* GreekIslandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */; settings = {ASSET_TAGS = (); }; };
+		EB4614311CEA125700E75EC6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EB4614351CEA18DF00E75EC6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614341CEA18DF00E75EC6 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB4614371CEA224500E75EC6 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB4614151CE9FECC00E75EC6 /* GreekImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreekImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4614181CE9FECC00E75EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB46141A1CE9FECC00E75EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB46141D1CE9FECC00E75EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4614221CE9FECC00E75EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB4614241CE9FECC00E75EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB46142A1CEA01C700E75EC6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreekIslandModel.swift; sourceTree = "<group>"; };
+		EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		EB4614341CEA18DF00E75EC6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB4614121CE9FECC00E75EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB46140C1CE9FECC00E75EC6 = {
+			isa = PBXGroup;
+			children = (
+				EB4614171CE9FECC00E75EC6 /* GreekImages */,
+				EB4614161CE9FECC00E75EC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB4614161CE9FECC00E75EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4614151CE9FECC00E75EC6 /* GreekImages.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB4614171CE9FECC00E75EC6 /* GreekImages */ = {
+			isa = PBXGroup;
+			children = (
+				EB46142A1CEA01C700E75EC6 /* TableViewController.swift */,
+				EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */,
+				EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */,
+				EB4614341CEA18DF00E75EC6 /* WebViewController.swift */,
+				EB46141C1CE9FECC00E75EC6 /* Main.storyboard */,
+				EB4614181CE9FECC00E75EC6 /* AppDelegate.swift */,
+				EB46141A1CE9FECC00E75EC6 /* ViewController.swift */,
+				EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */,
+				EB4614211CE9FECC00E75EC6 /* LaunchScreen.storyboard */,
+				EB4614241CE9FECC00E75EC6 /* Info.plist */,
+				EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */,
+			);
+			path = GreekImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB4614141CE9FECC00E75EC6 /* GreekImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4614271CE9FECC00E75EC6 /* Build configuration list for PBXNativeTarget "GreekImages" */;
+			buildPhases = (
+				EB4614111CE9FECC00E75EC6 /* Sources */,
+				EB4614121CE9FECC00E75EC6 /* Frameworks */,
+				EB4614131CE9FECC00E75EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreekImages;
+			productName = GreekImages;
+			productReference = EB4614151CE9FECC00E75EC6 /* GreekImages.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB46140D1CE9FECC00E75EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = apps.lingren.co;
+				TargetAttributes = {
+					EB4614141CE9FECC00E75EC6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = EB4614101CE9FECC00E75EC6 /* Build configuration list for PBXProject "GreekImages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB46140C1CE9FECC00E75EC6;
+			productRefGroup = EB4614161CE9FECC00E75EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB4614141CE9FECC00E75EC6 /* GreekImages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB4614131CE9FECC00E75EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4614231CE9FECC00E75EC6 /* LaunchScreen.storyboard in Resources */,
+				EB4614201CE9FECC00E75EC6 /* Assets.xcassets in Resources */,
+				EB46141E1CE9FECC00E75EC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB4614111CE9FECC00E75EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB46141B1CE9FECC00E75EC6 /* ViewController.swift in Sources */,
+				EB4614351CEA18DF00E75EC6 /* WebViewController.swift in Sources */,
+				EB4614311CEA125700E75EC6 /* CustomTableViewCell.swift in Sources */,
+				EB46142B1CEA01C700E75EC6 /* TableViewController.swift in Sources */,
+				EB4614191CE9FECC00E75EC6 /* AppDelegate.swift in Sources */,
+				EB4614371CEA224500E75EC6 /* CustomTableViewController.swift in Sources */,
+				EB46142D1CEA065400E75EC6 /* GreekIslandModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB46141C1CE9FECC00E75EC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB46141D1CE9FECC00E75EC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB4614211CE9FECC00E75EC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4614221CE9FECC00E75EC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB4614251CE9FECC00E75EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB4614261CE9FECC00E75EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB4614281CE9FECC00E75EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GreekImages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.lingren.apps.GreekImages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB4614291CE9FECC00E75EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GreekImages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.lingren.apps.GreekImages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB4614101CE9FECC00E75EC6 /* Build configuration list for PBXProject "GreekImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4614251CE9FECC00E75EC6 /* Debug */,
+				EB4614261CE9FECC00E75EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4614271CE9FECC00E75EC6 /* Build configuration list for PBXNativeTarget "GreekImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4614281CE9FECC00E75EC6 /* Debug */,
+				EB4614291CE9FECC00E75EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB46140D1CE9FECC00E75EC6 /* Project object */;
+}
