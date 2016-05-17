@@ -19,7 +19,7 @@ class CustomTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         let corfu = GreekIsland(name: "Corfu", attractions: "Best sand beaches", imageName: "zakynthos.jpg")
         let mykonos = GreekIsland(name: "Mykonos", attractions: "Cosmopolitan lifestyle. Best night life ever.", imageName: "mykonos.jpg")
@@ -58,17 +58,7 @@ class CustomTableViewController: UITableViewController {
             let webVC = segue.destinationViewController as! WebViewController
             let currentIsland = greekIslands[indexPath.row]
             
-            switch currentIsland.name {
-            case "Santorini":
-                webVC.url = "https://en.wikipedia.org/wiki/Santorini"
-                break
-            case "Mykonos":
-                webVC.url = "https://en.wikipedia.org/wiki/Mykonos"
-                break
-            default:
-                webVC.url = ""
-                break
-            }
+            webVC.url = currentIsland.infoUrl
             
         } else {
             print("No selected row")
@@ -86,7 +76,7 @@ class CustomTableViewController: UITableViewController {
         
         return cell!
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -136,4 +126,33 @@ class CustomTableViewController: UITableViewController {
     }
     */
 
+    
+    /*
+        Storyboards provide the ability to go back with an Unwind Segue which can be done in three steps:
+        1. create an object/button to select
+        2. create an unwind method/action in the controller you want to unwind to
+        3. hook up the method in the target controller to the current controller
+    */
+    
+    @IBAction func cancelNewGreekIsland(segue:UIStoryboardSegue) {
+        print("Add island action cancelled")
+    }
+    
+    @IBAction func saveNewGreekIsland(segue:UIStoryboardSegue) {
+        if let newIslandVC = segue.sourceViewController as? AddIslandViewController {
+            // create a new Island
+            if let newIsland = newIslandVC.newIsland {
+                // append the newIsland in the greekIslands array
+                greekIslands.append(newIsland)
+                
+                //find the new indexPath to insert the new island
+                let indexPath = NSIndexPath(forRow: greekIslands.count-1, inSection: 0)
+                
+                // update the tableview
+                tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            }
+        } else {
+            
+        }
+    }
 }

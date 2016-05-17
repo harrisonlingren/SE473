@@ -44,6 +44,9 @@ class TableViewController: UITableViewController {
             let webVC = segue.destinationViewController as! WebViewController
             let currentIsland = greekIslands[indexPath.row]
             
+            webVC.url = currentIsland.infoUrl
+            
+            /*
             switch currentIsland.name {
                 case "Santorini":
                     webVC.url = "https://en.wikipedia.org/wiki/Santorini"
@@ -52,9 +55,9 @@ class TableViewController: UITableViewController {
                     webVC.url = "https://en.wikipedia.org/wiki/Mykonos"
                     break
                 default:
-                    webVC.url = ""
+                    webVC.url =
                     break
-            }
+            } */
             
         } else {
             print("No selected row")

@@ -13,6 +13,7 @@ class GreekIsland {
     var name:String
     var attractions:String
     var image:UIImage?
+    var infoUrl:String
     
     init(name:String,attractions:String,imageName:String?) {
         self.name = name
@@ -22,5 +23,17 @@ class GreekIsland {
         } else {
             self.image = UIImage(named: "noimage.jpg")
         }
+        self.infoUrl = "about:blank"
+    }
+    
+    init(name:String,attractions:String,imageName:String?,infoUrl:String?) {
+        self.name = name
+        self.attractions = attractions
+        if let imgName = imageName {
+            self.image = UIImage(named: imgName)
+        } else {
+            self.image = UIImage(named: "noimage.jpg")
+        }
+        self.infoUrl = infoUrl!
     }
 }

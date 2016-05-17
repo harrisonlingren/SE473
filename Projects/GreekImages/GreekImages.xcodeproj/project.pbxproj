@@ -12,11 +12,11 @@
 		EB46141E1CE9FECC00E75EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB46141C1CE9FECC00E75EC6 /* Main.storyboard */; };
 		EB4614201CE9FECC00E75EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */; };
 		EB4614231CE9FECC00E75EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4614211CE9FECC00E75EC6 /* LaunchScreen.storyboard */; };
-		EB46142B1CEA01C700E75EC6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46142A1CEA01C700E75EC6 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EB46142D1CEA065400E75EC6 /* GreekIslandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */; settings = {ASSET_TAGS = (); }; };
 		EB4614311CEA125700E75EC6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		EB4614351CEA18DF00E75EC6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614341CEA18DF00E75EC6 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EB4614371CEA224500E75EC6 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB6373691CEB52B500682A67 /* AddIslandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6373681CEB52B500682A67 /* AddIslandViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4614221CE9FECC00E75EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4614241CE9FECC00E75EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB46142A1CEA01C700E75EC6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
 		EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreekIslandModel.swift; sourceTree = "<group>"; };
 		EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EB4614341CEA18DF00E75EC6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		EB6373681CEB52B500682A67 /* AddIslandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIslandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +64,27 @@
 		EB4614171CE9FECC00E75EC6 /* GreekImages */ = {
 			isa = PBXGroup;
 			children = (
-				EB46142A1CEA01C700E75EC6 /* TableViewController.swift */,
-				EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */,
-				EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */,
-				EB4614341CEA18DF00E75EC6 /* WebViewController.swift */,
+				EB63736A1CEB52C400682A67 /* CustomClasses */,
 				EB46141C1CE9FECC00E75EC6 /* Main.storyboard */,
 				EB4614181CE9FECC00E75EC6 /* AppDelegate.swift */,
 				EB46141A1CE9FECC00E75EC6 /* ViewController.swift */,
 				EB46141F1CE9FECC00E75EC6 /* Assets.xcassets */,
 				EB4614211CE9FECC00E75EC6 /* LaunchScreen.storyboard */,
 				EB4614241CE9FECC00E75EC6 /* Info.plist */,
-				EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */,
 			);
 			path = GreekImages;
+			sourceTree = "<group>";
+		};
+		EB63736A1CEB52C400682A67 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EB46142C1CEA065400E75EC6 /* GreekIslandModel.swift */,
+				EB4614301CEA125700E75EC6 /* CustomTableViewCell.swift */,
+				EB4614341CEA18DF00E75EC6 /* WebViewController.swift */,
+				EB4614361CEA224500E75EC6 /* CustomTableViewController.swift */,
+				EB6373681CEB52B500682A67 /* AddIslandViewController.swift */,
+			);
+			name = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +160,7 @@
 				EB46141B1CE9FECC00E75EC6 /* ViewController.swift in Sources */,
 				EB4614351CEA18DF00E75EC6 /* WebViewController.swift in Sources */,
 				EB4614311CEA125700E75EC6 /* CustomTableViewCell.swift in Sources */,
-				EB46142B1CEA01C700E75EC6 /* TableViewController.swift in Sources */,
+				EB6373691CEB52B500682A67 /* AddIslandViewController.swift in Sources */,
 				EB4614191CE9FECC00E75EC6 /* AppDelegate.swift in Sources */,
 				EB4614371CEA224500E75EC6 /* CustomTableViewController.swift in Sources */,
 				EB46142D1CEA065400E75EC6 /* GreekIslandModel.swift in Sources */,
