@@ -12,15 +12,22 @@ import CoreData
 class EditViewController: UIViewController {
 
     var taskToEdit:NSManagedObject!
-    var dm:DataManager!
     
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var notesText: UITextView!
+    
+    var titleString:String!
+    var notesString:String!
+    var editMode:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        titleText.text = titleString
+        notesText.text = notesString
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,15 +43,18 @@ class EditViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if segue.identifier == "unwindFromSaveEdit" {
+        if segue.identifier! == "unwindFromSaveEdit" {
             print("EditVC: Unwinding from save action")
             
-            if let tableVC = segue.destinationViewController as? TableView { print("EditVC: Saving item to table...") }
-            else if let detailsVC = segue.destinationViewController as? DetailsViewController { print("EditVC: Updating item in detail view") }
+            if let _ = segue.destinationViewController as? TableView { print("EditVC: Saving item to table...") }
             else { print("EditVC: Could not update item") }
+            
+        } else if segue.identifier! == "unwindFromCancelEdit" {
+            print("EditVC: Item edit action cancelled")
             
         } else {
             print("EditVC: No segue by identifier \(segue.identifier) was found")
+            
         }
     }
 }

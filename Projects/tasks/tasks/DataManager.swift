@@ -30,7 +30,7 @@ class DataManager {
         // Error handling
         do {
             let results = try managedContext.executeFetchRequest(fetchReq)
-            storedObjects = results as! [NSManagedObject] // Store result in the data array
+            self.storedObjects = results as! [NSManagedObject] // Store result in the data array
         } catch let error as NSError {
             print("Could not get data. Error: \(error), \(error.userInfo)")
         }

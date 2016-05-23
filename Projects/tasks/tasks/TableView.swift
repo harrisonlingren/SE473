@@ -8,11 +8,13 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 class TableView: UITableViewController {
 
     var taskSent:NSManagedObject!
     var dm = DataManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,20 +112,40 @@ class TableView: UITableViewController {
         
         
         
-        if segue.identifier == "segueToDetails" {
-            if let detailsVC = segue.destinationViewController as? DetailsViewController {
-                print("TableVC: Segue to show details...")
+        if segue.identifier == "segueToEdit" {
+            if let editVC = segue.destinationViewController as? EditViewController {
+                print("TableVC: Showing details on EditView \(editVC.title)")
                 
                 let index = tableView.indexPathForSelectedRow?.row
                 let task = dm.storedObjects[index!] as NSManagedObject
-                detailsVC.titleText.text = task.valueForKey("title") as? String
-                detailsVC.notesText.text = task.valueForKey("notes") as? String
-                detailsVC.taskFromTable = task
+                
+                for item in dm.storedObjects as [NSManagedObject] {
+                    let itemText = item.valueForKey("title") as! String?
+                    print("index: \(Int((dm.storedObjects.indexOf(item)?.value)!)), item: \(itemText!)")
+                }
+                
+                
+                
+                if let taskTitle = task.valueForKey("title") as! String? {
+                    editVC.titleString = taskTitle
+                } else {
+                    editVC.titleText.text = "No title found"
+                }
+                
+                if let taskNotes = task.valueForKey("notes") as! String? {
+                    editVC.notesString = taskNotes
+                    
+                } else {
+                    editVC.notesText.text = "No notes found"
+                }
+                
+                editVC.taskToEdit = task
+                editVC.editMode = "edit"
             }
         } else if segue.identifier == "segueToAdd" {
             if let addVC = segue.destinationViewController as? EditViewController {
                 print("TableVC: Segue to add item")
-                addVC.dm = dm
+                addVC.editMode = "add"
             }
         } else { print("TableVC: No view found for \(segue.identifier).") }
     }
@@ -135,15 +157,11 @@ class TableView: UITableViewController {
     @IBAction func unwindFromSaveEdit(segue: UIStoryboardSegue) {
         print("TableVC: Saving item to table...")
         if let vc = segue.sourceViewController as? EditViewController {
-            dm.insert(vc.titleText.text!, notes: vc.notesText.text!, entityName: "Task")
-        }
-        self.tableView.reloadData()
-    }
-    
-    @IBAction func returnToTable(segue: UIStoryboardSegue) {
-        print("TableVC: Updating table...")
-        if let vc = segue.sourceViewController as? DetailsViewController {
-            dm.update(vc.taskFromTable, title: vc.titleText.text!, notes: vc.notesText.text!)
+            if vc.editMode == "add" {
+                dm.insert(vc.titleText.text!, notes: vc.notesText.text!, entityName: "Task")
+            } else if vc.editMode == "edit" {
+                dm.update(vc.taskToEdit, title: vc.titleText.text!, notes: vc.notesText.text!)
+            }
         }
         self.tableView.reloadData()
     }
